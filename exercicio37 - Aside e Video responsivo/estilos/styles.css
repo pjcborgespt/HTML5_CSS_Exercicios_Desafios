@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* Utilização de variáveis */
+:root{
+    --cor0:#fff;
+    --cor1:#A7EAFA;   
+    --cor2:#D9FAA7;   
+    --cor3:#FAD8B9;
+    --cor4:#1b71d4;
+    --cor5:#150441;   
+    --cor6:#5A7A2A;
+
+
+ 
+
+
+    --fontBase: Verdana, Geneva, Tahoma, sans-serif;
+    --fontDest: Helvetica, Arial;
+    --fontTit: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Eliminação de espaço entre TODOS blocos  */
+* { margin: 0px; 
+    padding: 0px;}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fontBase);}
+
+header {
+    /*Cor de fundo simples */
+    /*background-color: var(--cor5);*/
+    /* Alterar a cor do cabeçalho em gradiente cor 4 e cor 5  */
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    /* Altura minima */
+    min-height: 150px;
+    /* Alinhamento ao centro */
+    text-align: center;
+    /* Margem Superior */
+    padding-top: 40px;}
+
+header > h1 {
+    color:var(--cor0);
+    font-size: 3em;}
+
+header > h2{
+    color:var(--cor0);}
+
+h1,h2 { color:var(--cor5);
+    font-family: var(--fontTit);}
+
+h1 {  font-size: 2em;}
+h2 {  font-size: 1.5em;}      
+
+nav {
+    background-color: var(--cor6);
+    /* Espaçamento */
+    padding: 15px;
+   
+    /* Encaixar o menu de navegação com MAIN*/    
+    display: block;
+    margin: auto;
+    max-width: 1210px;}
+
+/* Formatar hiperligações dentro NAV */
+nav > a {
+        padding: 15px;
+        color:var(--cor0);
+        /* Retirar o sublinhado */
+        text-decoration: none;
+        /* Texto em negrito */
+        font-weight: bold;
+        /* transição em 0.8 segundos */
+        transition-duration: 0.8s;}
+
+/* Criar formatação quando passamos o rato por cima */
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor6);
+/*****ALTERAR O ASPETO DO BOTÃO ********************/
+    border-radius: 15px 0px 0px 0px;
+}
+
+main { 
+    
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor0);
+    
+    /* Tamanho máximo e mínimo do MAIN*/
+    max-width: 1200px;
+    min-width: 200px;
+    
+    /* Sombra */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    /*border-radius: 0px 0px 10px 10px;*/
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;}
+
+/* Formatação de H1 e H2 dentro da tag MAIN*/
+main h1{ margin: 15px 60px 15px 45px;}
+
+main h2{ margin: 15px 60px 15px 45px;
+      background-image: linear-gradient(to right, var(--cor2), transparent);
+      padding: 5px;}
+
+
+footer {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    padding: 5px; }
+
+p { /* Margens iguais aos H1 e H2 */  
+    margin: 15px 60px 15px 45px;
+    font-family: var(--fontBase);
+    text-align: justify; 
+    line-height: 1.5;}
+
+ul {
+    margin-left: 90px;
+}
+    
+/*  formatar imagens */
+img {
+    /*largura a 80% */
+    width: 80%;
+    /* alinhamento ao centro e em bloco*/
+    margin: auto;
+    display: block;}
+
+/* Formatar os paragrafos com ID anoT */   
+/* Alinhar texto ao centro ,  Utilizar a fontDest e tamanho 2em */
+p#anoT{
+        font-family: var(--fontDest);
+        font-size:2em;
+        text-align: center;
+}

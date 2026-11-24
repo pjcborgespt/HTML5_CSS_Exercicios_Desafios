@@ -1,0 +1,8 @@
+/* Define a codificação de caracteres do ficheiro CSS como UTF-8 para suportar acentos e caracteres especiais */
+@charset "utf-8";
+
+/* Configuração global */
+*{
+    /* Seletor universal: aplica estilos a absolutamente todos os elementos da página (atualmente vazio) */
+}
+

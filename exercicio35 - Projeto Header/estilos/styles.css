@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Utilização de variáveis */
+:root{
+    --cor0:#fff;
+    --cor1:#bad6e6;   
+    --cor2:#70c3e9;   
+    --cor3:#75b2e4;
+    --cor4:#122e8a;
+    --cor5:#202230;   
+    --cor6:#06103d;
+
+    --fontBase: Verdana, Geneva, Tahoma, sans-serif;
+    --fontDest: Helvetica, Arial;
+    --fontTit: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Eliminação de espaço entre TODOS blocos  */
+* { margin: 0px; 
+    padding: 0px;}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fontBase);}
+
+header {
+    background-color: var(--cor5);}
+
+header > h1 {
+    color:var(--cor0);}
+
+header > h2{
+    color:var(--cor0)}
+
+h1,h2 { color:var(--cor5);
+    font-family: var(--fontTit);}
+
+h1 {  font-size: 2em;}      
+h2 {  font-size: 1.3em;}      
+
+nav {
+    background-color: var(--cor6);}
+
+
+main { 
+        margin: auto;
+        padding: 20px;
+        background-color: var(--cor0);}
+
+footer {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    padding: 5px; }
+
+p { font-family: var(--fontBase);
+    /* Alinhamento do texto */
+    text-align: justify; 
+    /* Espaço entre linhas*/
+    line-height: 1.5;}
+    
+/*  formatar imagens */
+img {
+    /*largura a 80% */
+    width: 80%;
+    /* alinhamento ao centro e em bloco*/
+    margin: auto;
+    display: block;}
+
+/* Formatar os paragrafos com ID anoT */   
+/* Alinhar texto ao centro ,  Utilizar a fontDest e tamanho 2em */
+p#anoT{
+        font-family: var(--fontDest);
+        font-size:2em;
+        text-align: center;
+}

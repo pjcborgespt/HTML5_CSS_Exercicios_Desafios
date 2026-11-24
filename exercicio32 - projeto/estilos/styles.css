@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Escala de cores em variáveis */
+
+:root {
+        --cor1:#bad6e6;   
+        --cor2:#70c3e9;   
+        --cor3:#75b2e4;
+        --cor4:#122e8a;
+        --cor5:#1a375c;   
+        --cor6:#06103d;
+
+        --fonteBase: Times, serif; 
+        --fonteDestaque: Arial, Verdana, Helvetica, sans-serif;
+        --fonteTit: impact;
+}
+
+/* Fazer isso no final - formatar todos os elementos de uma só vez - por exemplo  */
+
+*{ margin: 0px;
+    padding: 0px;}
+
+
+     body { background-color: var(--cor1);
+           font-family: var(--fonteDestaque);
+          
+    }
+
+    header { background-color: var(--cor2);
+ 
+    nav { background-color: var(--cor6);}
+
+    main{ background-color: white;}
+
+    footer{background-color: var(--cor5);
+            color:white;}
+
+    h1 {font-family: var(--fonteTit);
+        color: var(--cor5);
+        font-size: 2em;}
+
+    h2 {font-family: var(--fonteTit);
+        font-size: 1.4em;
+        color: var(--cor4)}
